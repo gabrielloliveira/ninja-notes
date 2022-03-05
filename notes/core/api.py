@@ -1,8 +1,8 @@
-from ninja import NinjaAPI
+from ninja import Router
 
-api = NinjaAPI()
+router = Router()
 
 
-@api.get("/")
+@router.get("/")
 def index(request):
     return {"message": "Hello, World!"}
